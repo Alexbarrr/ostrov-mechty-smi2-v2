@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Остров Мечты × СМИ2 — больше, чем билет</title>
+<meta name="description" content="Кейс: тематический парк «Остров Мечты» и медиа ГК СМИ2. Больше, чем билет: как продать яркие эмоции, за которыми тянутся все.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=6">
+</head>
+<body>
+
+<!-- Прогресс-бар -->
+<div class="progress"><div class="progress__bar" id="progressBar"></div></div>
+
+<!-- Сквозной бренд-лок -->
+<a class="lockup lockup--left" href="#s1" aria-label="Остров Мечты">
+  <img src="assets/img/logo-ostrov.svg" alt="Остров Мечты" class="lockup__ostrov">
+</a>
+<div class="lockup lockup--right">
+  <img src="assets/img/logo-smi2.svg" alt="СМИ2" class="lockup__smi">
+  <span class="lockup__x">×</span>
+  <img src="assets/img/logo-fm.svg" alt="Formats Media" class="lockup__fm">
+</div>
+
+<!-- Точки-навигация -->
+<nav class="dots" id="dots" aria-label="Навигация по слайдам"></nav>
+
+<main id="deck">
+
+  <!-- 01 ТИТУЛ -->
+  <section class="slide slide--hero" data-title="Больше, чем билет" id="s1">
+    <div class="hero__bg" style="background-image:url('assets/img/hero-poster.jpg')"></div>
+    <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg">
+      <source src="assets/video/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero__scrim"></div>
+    <div class="slide__inner hero__inner">
+      <p class="eyebrow reveal" data-d="0">Остров Мечты · кейс · тематический парк · медиа</p>
+      <h1 class="hero__title" id="heroTitle">Больше,<br>чем билет</h1>
+      <p class="hero__sub reveal" data-d="3" id="heroSub">Как продать <span class="accent">яркие эмоции</span>, за которыми тянутся все</p>
+    </div>
+    <div class="scroll-hint reveal" data-d="6">листайте ↓</div>
+    <span class="pageno">01</span>
+  </section>
+
+  <!-- 02 ГРУППА КОМПАНИЙ -->
+  <section class="slide" data-title="Группа компаний" id="s2">
+    <div class="slide__inner grid-2">
+      <div class="col">
+        <p class="eyebrow reveal">Кто мы</p>
+        <h2 class="reveal" data-d="1">Группа компаний СМИ2</h2>
+        <p class="lead reveal" data-d="2">Медиаселлер: продаём внимание аудитории, а не показы. Строим сложные коммуникации под задачу бренда.</p>
+        <ul class="stack">
+          <li class="row reveal" data-d="3">
+            <span class="row__ic"><i data-lucide="thumbs-up"></i></span>
+            <div><h4>Рекомендательные ТГБ</h4><p>Текстово-графические блоки в нативном окружении</p></div>
+          </li>
+          <li class="row reveal" data-d="4">
+            <span class="row__ic"><i data-lucide="megaphone"></i></span>
+            <div><h4>Formats.media</h4><p>Своя сеть рич-баннеров с интерактивом</p></div>
+          </li>
+          <li class="row reveal" data-d="5">
+            <span class="row__ic"><i data-lucide="newspaper"></i></span>
+            <div><h4>Информационные волны</h4><p>Размещения в интернет-медиа: охват и знание бренда</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="col media-frame reveal" data-d="2">
+        <div class="parallax-photo" style="background-image:url('assets/img/dome.jpg')"></div>
+      </div>
+    </div>
+    <span class="pageno">02</span>
+  </section>
+
+  <!-- 03 НЕ ПАРК ДЛЯ ДЕТЕЙ -->
+  <section class="slide slide--photo" data-title="Не парк для детей" id="s3">
+    <div class="hero__bg hero__bg--right" style="background-image:url('assets/img/park-ride.jpg')"></div>
+    <div class="hero__scrim hero__scrim--soft"></div>
+    <div class="slide__inner">
+      <p class="eyebrow reveal">Клиент и продукт</p>
+      <h2 class="reveal" data-d="1">Это не «парк для&nbsp;детей».</h2>
+      <p class="lead accent reveal" data-d="2">Это тематический парк развлечений.</p>
+      <div class="duo">
+        <div class="card card--myth reveal" data-d="3">
+          <span class="tag tag--muted"><i data-lucide="eye-off"></i> Стереотип</span>
+          <p>«Парк развлечений — это только для детей»</p>
+        </div>
+        <div class="card card--real reveal" data-d="4">
+          <span class="tag tag--accent"><i data-lucide="sparkles"></i> Реальность</span>
+          <p>Тематический парк: эмоция, атмосфера и впечатление для всех возрастов</p>
+        </div>
+      </div>
+    </div>
+    <span class="pageno">03</span>
+  </section>
+
+  <!-- 04 ЧТО МЫ РЕШАЕМ -->
+  <section class="slide" data-title="Что мы решаем" id="s4">
+    <div class="slide__inner">
+      <p class="eyebrow reveal">Задачи бренда и цели рекламной кампании</p>
+      <h2 class="reveal" data-d="1">Что мы решаем</h2>
+      <div class="grid-4">
+        <div class="task reveal" data-d="2"><span class="task__n">1</span><span class="task__ic"><i data-lucide="trending-up"></i></span><h4>Рост целевого трафика и конверсий</h4><p>Больше целевых визитов на сайт и заметно больше целевых действий</p></div>
+        <div class="task reveal" data-d="3"><span class="task__n">2</span><span class="task__ic"><i data-lucide="eye"></i></span><h4>Рост знания бренда</h4><p>Расширение охвата и узнаваемости среди широкой аудитории</p></div>
+        <div class="task reveal" data-d="4"><span class="task__n">3</span><span class="task__ic"><i data-lucide="lightbulb"></i></span><h4>Правильное понимание продукта</h4><p>Что такое парк развлечений и что значит «тематический парк»</p></div>
+        <div class="task reveal" data-d="5"><span class="task__n">4</span><span class="task__ic"><i data-lucide="users"></i></span><h4>Работа со стереотипом</h4><p>Снять восприятие «парк только для детей»</p></div>
+      </div>
+    </div>
+    <span class="pageno">04</span>
+  </section>
+
+  <!-- 05 ПРОДУКТЫ -->
+  <section class="slide" data-title="Продукты ГК СМИ2" id="s5">
+    <div class="slide__inner">
+      <p class="eyebrow reveal">Инструменты</p>
+      <h2 class="reveal" data-d="1">Продукты ГК СМИ2</h2>
+      <p class="lead reveal" data-d="2">Три формата под три типа внимания внутри одной кампании.</p>
+      <div class="grid-3">
+        <div class="prod reveal" data-d="3"><span class="prod__ic"><i data-lucide="thumbs-up"></i></span><h3>Рекомендательные ТГБ</h3><p>Нативные текстово-графические блоки в редакционном окружении. Ловят внимание к рекомендациям.</p></div>
+        <div class="prod reveal" data-d="4"><span class="prod__ic"><i data-lucide="megaphone"></i></span><h3>Formats.media · Рич</h3><p>Своя сеть интерактивных рич-баннеров. Вовлечение и целевое действие.</p></div>
+        <div class="prod reveal" data-d="5"><span class="prod__ic"><i data-lucide="newspaper"></i></span><h3>Информационные волны</h3><p>Размещение информационного повода и волна цитирования в российских интернет-медиа с гарантированным объёмом читателей.</p></div>
+      </div>
+    </div>
+    <span class="pageno">05</span>
+  </section>
+
+  <!-- 06 ВНУТРИ ЦА -->
+  <section class="slide slide--photo" data-title="Внутри ЦА" id="s6">
+    <div class="hero__bg hero__bg--texture" style="background-image:url('assets/img/network.jpg')"></div>
+    <div class="hero__scrim hero__scrim--full"></div>
+    <div class="slide__inner">
+      <p class="eyebrow reveal">Инсайт</p>
+      <h2 class="reveal" data-d="1">Внутри ЦА внимание<br>работает по-разному</h2>
+      <div class="grid-2 stack-grid">
+        <div class="row reveal" data-d="2"><span class="row__ic"><i data-lucide="mouse-pointer-click"></i></span><div><h4>Внимание к рекомендациям</h4><p>Доверяют подсказкам и нативным форматам</p></div></div>
+        <div class="row reveal" data-d="3"><span class="row__ic"><i data-lucide="book-open"></i></span><div><h4>Внимание к нерекламному контенту</h4><p>Реагируют на полезные материалы, а не на баннеры</p></div></div>
+        <div class="row reveal" data-d="4"><span class="row__ic"><i data-lucide="zap"></i></span><div><h4>Клиповое мышление</h4><p>Быстрое переключение, нужен моментальный крючок</p></div></div>
+        <div class="row reveal" data-d="5"><span class="row__ic"><i data-lucide="eye-off"></i></span><div><h4>Баннерная слепота</h4><p>Игнорируют классическую медийку</p></div></div>
+      </div>
+      <p class="note accent reveal" data-d="6">Сложная коммуникация = комбинация форматов под каждый тип внимания.</p>
+    </div>
+    <span class="pageno">06</span>
+  </section>
+
+  <!-- 07 КЕЙС 01 -->
+  <section class="slide" data-title="Кейс 01 · ТГБ" id="s7">
+    <div class="slide__inner grid-2">
+      <div class="col">
+        <span class="badge reveal">Кейс 01</span>
+        <h2 class="reveal" data-d="1">Реко&shy;менда&shy;тельные ТГБ</h2>
+        <p class="lead reveal" data-d="2">Нативный формат в редакционном окружении ловит «тёплое» внимание — тех, кто доверяет рекомендациям.</p>
+        <ul class="stack">
+          <li class="row reveal" data-d="3"><span class="row__ic"><i data-lucide="filter"></i></span><div><h4>Роль в воронке</h4><p>Верх и середина: формирует интерес и знание через доверие к контенту</p></div></li>
+          <li class="row reveal" data-d="4"><span class="row__ic"><i data-lucide="users"></i></span><div><h4>Аудитория</h4><p>Те, кто читает рекомендации и нативные подборки</p></div></li>
+          <li class="row reveal" data-d="5"><span class="row__ic"><i data-lucide="sparkles"></i></span><div><h4>Эффект</h4><p>Мягкий первый контакт с брендом без баннерной слепоты</p></div></li>
+        </ul>
+      </div>
+      <div class="col media-frame reveal" data-d="2">
+        <div class="parallax-photo" style="background-image:url('assets/img/park-plaza.jpg')"></div>
+      </div>
+    </div>
+    <span class="pageno">07</span>
+  </section>
+
+  <!-- 08 КЕЙС 02 -->
+  <section class="slide" data-title="Кейс 02 · Рич" id="s8">
+    <div class="slide__inner grid-2">
+      <div class="col">
+        <span class="badge reveal">Кейс 02</span>
+        <h2 class="reveal" data-d="1">Рич-баннер · оптимизация в мае</h2>
+        <p class="eyebrow eyebrow--accent reveal" data-d="2">Как оптимизировали</p>
+        <ul class="stack">
+          <li class="row reveal" data-d="3"><span class="row__ic"><i data-lucide="pie-chart"></i></span><div><h4>Post-view анализ</h4><p>Разобрали конверсии по площадкам (Adriver + ЯММ)</p></div></li>
+          <li class="row reveal" data-d="4"><span class="row__ic"><i data-lucide="wallet"></i></span><div><h4>Перераспределение бюджета</h4><p>Перелили бюджет на самые эффективные площадки</p></div></li>
+          <li class="row reveal" data-d="5"><span class="row__ic"><i data-lucide="activity"></i></span><div><h4>Поведенческие метрики</h4><p>Отбор: bounce rate &lt; 20%, время на сайте &gt; 40 сек</p></div></li>
+          <li class="row reveal" data-d="6"><span class="row__ic"><i data-lucide="clock"></i></span><div><h4>Тайминг показов</h4><p>Сузили до пиковой активности 08:00–22:00</p></div></li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="result reveal" data-d="3">
+          <p class="result__label">Результат</p>
+          <div class="metric metric--up">
+            <span class="metric__val"><i data-lucide="arrow-up" class="metric__arrow"></i>×<span class="count" data-to="3.75" data-dec="2">0</span></span>
+            <span class="metric__cap">целевых действий (конверсий)</span>
+          </div>
+          <div class="metric metric--down">
+            <span class="metric__val"><i data-lucide="arrow-down" class="metric__arrow"></i>−<span class="count" data-to="66" data-dec="0">0</span>%</span>
+            <span class="metric__cap">стоимость целевого действия (CPA)</span>
+          </div>
+          <p class="result__foot">Поведение после клика: отказы ~12% · глубина 2,1 · время на сайте &gt;1 мин</p>
+        </div>
+      </div>
+    </div>
+    <span class="pageno">08</span>
+  </section>
+
+  <!-- 09 КЕЙС 03 -->
+  <section class="slide" data-title="Кейс 03 · Инфоволна" id="s9">
+    <div class="slide__inner grid-2">
+      <div class="col">
+        <span class="badge reveal">Кейс 03</span>
+        <h2 class="reveal" data-d="1">Информационная волна</h2>
+        <p class="lead reveal" data-d="2">Размещения материалов в интернет-медиа создают объём упоминаний и работают на знание бренда и правильное понимание продукта.</p>
+        <ul class="stack">
+          <li class="row reveal" data-d="3"><span class="row__ic"><i data-lucide="globe"></i></span><div><h4>Охват</h4><p>Широкая аудитория интернет-СМИ за пределами перформанса</p></div></li>
+          <li class="row reveal" data-d="4"><span class="row__ic"><i data-lucide="lightbulb"></i></span><div><h4>Смысл</h4><p>Объясняет, что такое тематический парк — снимает стереотип</p></div></li>
+          <li class="row reveal" data-d="5"><span class="row__ic"><i data-lucide="trending-up"></i></span><div><h4>Эффект</h4><p>Поддерживает знание бренда и питает верх воронки</p></div></li>
+        </ul>
+      </div>
+      <div class="col shot-frame reveal" data-d="2">
+        <img src="assets/img/infowave.jpg" alt="Публикация «Остров Мечты войдёт в топ-5 парков» на СМИ2 — 869,2K просмотров" class="shot">
+      </div>
+    </div>
+    <span class="pageno">09</span>
+  </section>
+
+  <!-- 10 МЕТОДОЛОГИЯ -->
+  <section class="slide" data-title="Методология" id="s10">
+    <div class="slide__inner">
+      <p class="eyebrow reveal">Методология</p>
+      <h2 class="reveal" data-d="1">Комбинация форматов закрывает все типы внимания</h2>
+      <div class="combo">
+        <div class="combo__item reveal" data-d="2"><span class="combo__ic"><i data-lucide="thumbs-up"></i></span><h3>ТГБ</h3><p>Внимание к рекомендациям</p></div>
+        <span class="combo__plus reveal" data-d="3">+</span>
+        <div class="combo__item reveal" data-d="3"><span class="combo__ic"><i data-lucide="megaphone"></i></span><h3>Рич</h3><p>Вовлечение и действие</p></div>
+        <span class="combo__plus reveal" data-d="4">+</span>
+        <div class="combo__item reveal" data-d="4"><span class="combo__ic"><i data-lucide="newspaper"></i></span><h3>Инфоволна</h3><p>Охват и знание</p></div>
+        <span class="combo__arrow reveal" data-d="5"><i data-lucide="arrow-right"></i></span>
+        <div class="combo__item combo__item--final reveal" data-d="5"><span class="combo__ic"><i data-lucide="heart"></i></span><h3>Продажа эмоции</h3></div>
+      </div>
+      <p class="note reveal" data-d="6">Ни один формат в одиночку не закрывает разнородную аудиторию. Сила — в их комбинации внутри одной кампании.</p>
+    </div>
+    <span class="pageno">10</span>
+  </section>
+
+  <!-- 11 ВЫВОДЫ -->
+  <section class="slide slide--photo" data-title="Выводы" id="s11">
+    <div class="hero__bg" style="background-image:url('assets/img/park-sunset.jpg');background-position:center 55%"></div>
+    <div class="hero__scrim hero__scrim--full"></div>
+    <div class="slide__inner">
+      <p class="eyebrow reveal">Выводы</p>
+      <h2 class="reveal" data-d="1">Продажа эмоции требует<br>сложных комбинаций</h2>
+      <ul class="conclusions">
+        <li class="reveal" data-d="2"><i data-lucide="check" class="ic"></i> Один формат не закрывает всю ЦА — у разных групп разное внимание</li>
+        <li class="reveal" data-d="3"><i data-lucide="check" class="ic"></i> Комбинация ТГБ + рич + инфоволны работает на всю воронку сразу</li>
+        <li class="reveal" data-d="4"><i data-lucide="check" class="ic"></i> Оптимизация по post-view и поведению дала ×3,75 конверсий и −66% CPA</li>
+        <li class="reveal" data-d="5"><i data-lucide="heart" class="ic accent"></i> Итог — продажа не билета, а эмоции и впечатления</li>
+      </ul>
+    </div>
+    <span class="pageno">11</span>
+  </section>
+
+  <!-- 12 КОНТАКТЫ / ФИНАЛ -->
+  <section class="slide slide--photo" data-title="Контакты" id="s12">
+    <div class="hero__bg" style="background-image:url('assets/img/castle.jpg');background-position:center 35%"></div>
+    <div class="hero__scrim hero__scrim--full"></div>
+    <div class="slide__inner">
+      <p class="eyebrow reveal">Спасибо за внимание</p>
+      <h2 class="reveal" data-d="1">Сделаем яркую кампанию вместе</h2>
+      <div class="contacts">
+        <div class="contact reveal" data-d="2">
+          <span class="contact__ava">РМ</span>
+          <div class="contact__body">
+            <h4 class="contact__name">Рафаэль Мелик-Еганов</h4>
+            <p class="contact__role">Директор по развитию Formats.media и СМИ2</p>
+            <span class="contact__logo">
+              <img src="assets/img/logo-smi2.svg" alt="СМИ2">
+              <span class="contact__x">×</span>
+              <img src="assets/img/logo-fm.svg" alt="Formats Media">
+            </span>
+          </div>
+        </div>
+        <div class="contact reveal" data-d="3">
+          <span class="contact__ava">ЕЛ</span>
+          <div class="contact__body">
+            <h4 class="contact__name">Екатерина Лошкарева</h4>
+            <p class="contact__role">Заместитель генерального директора по маркетинговым коммуникациям «Острова Мечты»</p>
+            <span class="contact__logo">
+              <img src="assets/img/logo-ostrov.svg" alt="Остров Мечты" class="contact__logo-ostrov">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="pageno">12</span>
+  </section>
+
+</main>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="main.js?v=2"></script>
+</body>
+</html>
