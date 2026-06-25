@@ -156,11 +156,19 @@
     current = Math.round(deck.scrollTop / deck.clientHeight);
   }, { passive: true });
 
+  function toggleFullscreen() {
+    const el = document.documentElement;
+    if (!document.fullscreenElement) (el.requestFullscreen || el.webkitRequestFullscreen)?.call(el);
+    else (document.exitFullscreen || document.webkitExitFullscreen)?.call(document);
+  }
+
   document.addEventListener('keydown', (e) => {
-    if (['ArrowDown', 'PageDown', ' '].includes(e.key)) { e.preventDefault(); go(1); }
-    else if (['ArrowUp', 'PageUp'].includes(e.key)) { e.preventDefault(); go(-1); }
+    // Вперёд: ↓ → PageDown пробел Enter  | Назад: ↑ ← PageUp Backspace
+    if (['ArrowDown', 'ArrowRight', 'PageDown', ' ', 'Enter'].includes(e.key)) { e.preventDefault(); go(1); }
+    else if (['ArrowUp', 'ArrowLeft', 'PageUp', 'Backspace'].includes(e.key)) { e.preventDefault(); go(-1); }
     else if (e.key === 'Home') { e.preventDefault(); slides[0].scrollIntoView({ behavior: 'smooth' }); }
     else if (e.key === 'End') { e.preventDefault(); slides[slides.length - 1].scrollIntoView({ behavior: 'smooth' }); }
+    else if (e.key === 'f' || e.key === 'F' || e.key === 'а' || e.key === 'А') { e.preventDefault(); toggleFullscreen(); }
   });
 
   // первый слайд сразу
