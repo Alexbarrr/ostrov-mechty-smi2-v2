@@ -286,9 +286,9 @@ p{color:var(--muted)}
   border:1px solid var(--border); border-radius:18px; padding:26px 28px;
 }
 .contact__ava{
-  flex:0 0 auto; width:62px; height:62px; border-radius:50%;
-  display:grid; place-items:center; font-family:var(--display); font-weight:700; font-size:22px;
-  color:#fff; background:linear-gradient(150deg,var(--accent),#c8431d);
+  flex:0 0 auto; width:72px; height:72px; border-radius:50%;
+  object-fit:cover; object-position:center top;
+  border:2px solid rgba(255,90,44,.5); box-shadow:0 6px 20px rgba(0,0,0,.4);
 }
 .contact__body{min-width:0}
 .contact__name{font-family:var(--display); font-size:clamp(18px,1.5vw,23px); margin-bottom:.25em}
