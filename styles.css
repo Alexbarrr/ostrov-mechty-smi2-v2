@@ -20,6 +20,14 @@ body{
   scrollbar-width:none;
 }
 #deck::-webkit-scrollbar{display:none}
+
+/* ---------- Премиум-слой: виньетка + кинозерно ---------- */
+body::before{content:''; position:fixed; inset:0; z-index:40; pointer-events:none;
+  background:radial-gradient(125% 125% at 50% 45%, transparent 58%, rgba(0,0,0,.38))}
+body::after{content:''; position:fixed; inset:0; z-index:41; pointer-events:none; opacity:.045;
+  mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+@media (prefers-reduced-motion:reduce){body::after{display:none}}
 .slide{
   position:relative; min-height:100vh; scroll-snap-align:start; scroll-snap-stop:always;
   display:flex; align-items:center; overflow:hidden;
@@ -96,7 +104,13 @@ p{color:var(--muted)}
 .hero__scrim--full{background:
     linear-gradient(180deg, rgba(14,15,34,.5) 0%, rgba(14,15,34,0) 18%),
     linear-gradient(180deg, rgba(14,15,34,.84), rgba(14,15,34,.93))}
+.hero__scrim--glow{background:
+    linear-gradient(180deg, rgba(14,15,34,.55) 0%, rgba(14,15,34,0) 22%),
+    linear-gradient(105deg, rgba(14,15,34,.9) 30%, rgba(14,15,34,.62) 62%, rgba(14,15,34,.42) 100%)}
 .slide--hero{justify-content:flex-start}
+/* тёплое свечение под заголовком титула */
+.slide--hero::before{content:''; position:absolute; inset:0; z-index:2; pointer-events:none;
+  background:radial-gradient(55% 50% at 22% 62%, rgba(255,90,44,.20), transparent 70%)}
 .hero__inner{padding-top:4vh}
 .hero__title{
   font-family:var(--display); font-weight:800;
@@ -220,8 +234,8 @@ p{color:var(--muted)}
 .result__label{color:var(--accent); font-weight:700; letter-spacing:.18em; text-transform:uppercase; font-size:14px; margin-bottom:1em}
 .metric{margin-bottom:1.4em}
 .metric__val{display:block; font-family:var(--display); font-weight:800; font-size:clamp(40px,5.5vw,72px); line-height:1}
-.metric--up .metric__val{color:var(--accent)}
-.metric--down .metric__val{color:var(--green)}
+.metric--up .metric__val{color:var(--accent); text-shadow:0 0 42px rgba(255,90,44,.45)}
+.metric--down .metric__val{color:var(--green); text-shadow:0 0 42px rgba(64,174,73,.4)}
 .metric__cap{display:block; color:var(--muted); font-size:clamp(15px,1.2vw,18px); margin-top:.3em}
 .result__foot{color:var(--muted); font-size:clamp(15px,1.1vw,17px); margin-top:.5em; padding-top:1em; border-top:1px solid var(--border)}
 
