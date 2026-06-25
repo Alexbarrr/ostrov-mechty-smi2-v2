@@ -15,6 +15,28 @@
     window.lucide.createIcons();
   }
 
+  /* ---------- Интро-прелоадер ---------- */
+  (function intro() {
+    const el = document.getElementById('intro');
+    if (!el) return;
+    const vid = document.getElementById('introVideo');
+    const skip = document.getElementById('introSkip');
+    if (reduceMotion) { el.remove(); return; }
+    let done = false;
+    const hide = () => {
+      if (done) return; done = true;
+      el.classList.add('intro--hide');
+      setTimeout(() => el.remove(), 700);
+    };
+    if (vid) {
+      vid.addEventListener('ended', hide);
+      const p = vid.play && vid.play();
+      if (p && p.catch) p.catch(() => hide()); // автоплей заблокирован → не держим экран
+    }
+    if (skip) skip.addEventListener('click', hide);
+    setTimeout(hide, 5000); // страховка
+  })();
+
   /* ---------- Точки-навигация ---------- */
   slides.forEach((s, i) => {
     const b = document.createElement('button');

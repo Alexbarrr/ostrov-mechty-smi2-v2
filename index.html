@@ -8,9 +8,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=8">
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
+
+<!-- Интро-прелоадер (Remotion) -->
+<div class="intro" id="intro">
+  <video class="intro__video" id="introVideo" autoplay muted playsinline preload="auto">
+    <source src="assets/video/intro.mp4" type="video/mp4">
+  </video>
+  <button class="intro__skip" id="introSkip" aria-label="Пропустить интро">Пропустить →</button>
+</div>
 
 <!-- Прогресс-бар -->
 <div class="progress"><div class="progress__bar" id="progressBar"></div></div>
